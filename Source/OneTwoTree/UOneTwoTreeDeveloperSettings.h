@@ -25,4 +25,10 @@ public:
 
 	UPROPERTY(EditAnywhere, BluePrintReadOnly, Category = "Tree")
 	int32 AgeInSec = 30;
+
+	UPROPERTY(EditAnywhere, BluePrintReadOnly, Category = "Tree")
+	int32 FirstRankOffsetInSec = 6;
+
+	UPROPERTY(EditAnywhere, BluePrintReadOnly, Category = "Tree")
+	int32 OtherRanksOffsetInSec = 2;
 };

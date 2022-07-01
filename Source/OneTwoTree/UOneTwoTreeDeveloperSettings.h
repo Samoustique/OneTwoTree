@@ -30,6 +30,9 @@ public:
 		int32 AgeInSec = 30;
 
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Tree")
+		int32 GrowthInSec = 10;
+
+	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Tree")
 		int32 FirstRankOffsetInSec = 6;
 
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Tree")

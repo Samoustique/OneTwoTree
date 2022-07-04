@@ -23,9 +23,6 @@ public:
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Days")
 		int32 DayAndNightInSec = 10;
 
-	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Tree", meta = (DisplayName = "Debug Display"))
-		bool TreeDebugDisplay = false;
-
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Tree")
 		int32 AgeInSec = 30;
 
@@ -37,9 +34,6 @@ public:
 
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Tree")
 		int32 OtherRanksOffsetInSec = 2;
-
-	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Weather", meta = (DisplayName = "Debug Display"))
-		bool WeatherDebugDisplay = false;
 
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Weather")
 		int32 SunRayCastDistanceInCm = 10000;

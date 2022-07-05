@@ -35,7 +35,13 @@ public:
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Tree")
 		int32 OtherRanksOffsetInSec = 2;
 
+	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Tree", meta = (ClampMin = "0.0", ClampMax = "1.0", UIMin = "0.0", UIMax = "1.0"))
+		float MeshScaleReducerMin = 0.0;
+
+	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Tree", meta = (ClampMin = "0.0", ClampMax = "1.0", UIMin = "0.0", UIMax = "1.0"))
+		float MeshScaleReducerMax = 0.0;
+
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Weather")
-		int32 SunRayCastDistanceInCm = 10000;
+		int32 SunRayCastDistanceInMeter = 100;
 
 };

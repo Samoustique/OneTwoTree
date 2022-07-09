@@ -49,4 +49,7 @@ public:
 
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Generation")
 		int32 SpawnRadiusInMeter = 1000;
+
+	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Generation", meta = (ClampMin = "0.0", ClampMax = "1.0", UIMin = "0.0", UIMax = "1.0"))
+		float MutationRatio = 0.1;
 };

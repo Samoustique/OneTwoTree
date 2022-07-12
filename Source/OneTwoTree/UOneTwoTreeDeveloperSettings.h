@@ -44,6 +44,9 @@ public:
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Weather")
 		int32 SunRayCastDistanceInMeter = 100;
 
+	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Weather")
+		float IsSunnyRaycastTimerInSec = 1.0;
+
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Generation", meta=(DisplayName="Activate"))
 		bool ActivateGenerationManager = true;
 

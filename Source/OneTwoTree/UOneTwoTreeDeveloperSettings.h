@@ -35,6 +35,9 @@ public:
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Tree")
 		int32 OtherRanksOffsetInSec = 2;
 
+	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Tree")
+		int32 TimeBeforeRemovingDeadTreeInSec = 5;
+
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Tree", meta = (ClampMin = "0.0", ClampMax = "1.0", UIMin = "0.0", UIMax = "1.0"))
 		float RandomMeshScaleReducerMin = 0.0;
 

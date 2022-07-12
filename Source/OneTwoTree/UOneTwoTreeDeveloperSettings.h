@@ -44,6 +44,9 @@ public:
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Weather")
 		int32 SunRayCastDistanceInMeter = 100;
 
+	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Generation", meta=(DisplayName="Activate"))
+		bool ActivateGenerationManager = true;
+
 	UPROPERTY(Config, EditAnywhere, BluePrintReadOnly, Category = "Generation")
 		int32 TreeCount = 20;
 
